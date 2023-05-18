@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "super_state_machine"
+version = "2.0.3"
+description = "Super State Machine gives you utilities to build finite state machines."
+license = "BSD-3-Clause"
+authors = ["Szczepan Cieślik <szczepan.cieslik@gmail.com>"]
+readme = "README.md"
+keywords = ["super_state_machine"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+six = "^1.12.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "6.2.1"
+sphinx-rtd-theme = "1.2.0"
+alabaster = "0.7.13"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "3.3.2"
+pytest = "7.3.1"
+pytest-cov = "4.0.0"
+pylint = "2.17.4"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
