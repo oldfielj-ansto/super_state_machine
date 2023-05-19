@@ -6,13 +6,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   readme
-   installation
-   usage
-   api
-   contributing
-   authors
-   history
+   reference/readme
+   reference/installation
+   reference/usage
+   reference/api/api
+   reference/contributing
+   reference/authors
+   reference/history
 
 Indices and tables
 ==================

@@ -10,12 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Poetry "pyproject.toml" [PEP 621](https://peps.python.org/pep-0621/) compliant project metadata file.
-- Markdown changelog.
+- Markdown changelog and readme.
+- Pre-commit tests ([Black](https://github.com/psf/black), [Flake8](https://github.com/PyCQA/flake8), etc.)
+
+### Changed
+
+- Refactored docs.
 
 ### Removed
 
 - Python "setup.py" and "setup.cfg" packaging files.
-- RST based changelog and authors files.
+- RST based changelog and readme.
 - Support for Python < 3.8.
 
 ## [2.0.2] - 2017-03-13
