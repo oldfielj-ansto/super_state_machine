@@ -1,7 +1,7 @@
-# coding: utf-8
-
 """Super state machine - package that helps creating state machines."""
+
+from . import __version__
 
 __author__ = "Szczepan Cieślik"
 __email__ = "szczepan.cieslik@gmail.com"
-__version__ = "2.0.2"
+__version__ = __version__.__version__
